@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo">e-Express</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="" alt="Profile Picture" id="profilePic" class="profile-pic">
+                <input type="file" id="uploadPic" accept="image/*">
+                <h2 id="username"></h2>
+                <p class="role">Professional User</p>
+            </div>
+
+            <div class="profile-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Email:</strong> johndoe@example.com</li>
+                    <li><strong>Phone:</strong> +123-456-7890</li>
+                    <li><strong>Location:</strong> New York, USA</li>
+                </ul>
+            </div>
+
+            <div class="profile-actions">
+                <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+                <button class="save-btn" onclick="saveProfile()">Save Changes</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>

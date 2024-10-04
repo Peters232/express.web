@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>e-Express</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in"> <a href="login.html">Sign In</a></button>
+            <button class="sign-up"><a href="create.html">Sign Up</a></button>
+        </div>
+        <div class="menu-toggle">
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="" alt="Profile Picture" id="profilePic" class="profile-pic">
+                <input type="file" id="uploadPic" accept="image/*" title="Upload a new profile picture">
+                <h2 id="username">John Doe</h2>
+                <p class="role">Professional User</p>
+            </div>
+
+            <div class="profile-info">
+                <h3>Personal Information</h3>
+                <ul>
+                    <li><strong>Email:</strong> johndoe@example.com</li>
+                    <li><strong>Phone:</strong> +123-456-7890</li>
+                    <li><strong>Location:</strong> New York, USA</li>
+                </ul>
+            </div>
+
+            <div class="profile-actions">
+                <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+                <button class="save-btn" onclick="saveProfile()">Save Changes</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 e-Express. All rights reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

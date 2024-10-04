@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Express - Courier Services</title>
+    <link rel="stylesheet" href="express.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>e-Express</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in"> <a href="login.html">Sign In</a></button>
+            <button class="sign-up"><a href="create.html">Sign Up</a></button>
+        </div>
+        <div class="menu-toggle">
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to e-Express</h2>
+            <p>Your trusted partner in fast, secure, and reliable courier services. We bring innovative solutions for your delivery needs worldwide.</p>
+            <div class="home-buttons">
+                <button class="learn-more">Learn More</button>
+                <button class="get-started">Get Started</button>
+            </div>
+            <div class="interactive-stats">
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+                <div class="stat">
+                    <h3>99%</h3>
+                    <p>Delivery Success</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Global Offices</p>
+                </div>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="a2b7a353a4f5e24102d60e6d41a995cb.jpg" alt="Courier Services">
+        </div>
+    </section>
+    
+
+    
+
+    <section id="services">
+        <h2>Explore Our Premium Courier Solutions</h2>
+        <p>At e-Express, we provide a wide range of courier services designed to fit your business or personal needs. From express deliveries to customized logistics solutions, our services are tailored to ensure your satisfaction and convenience.</p>
+        
+        <div class="service-container">
+            <div class="service">
+                <h3>Express Delivery</h3>
+                <p>When speed is essential, trust our express delivery service for same-day shipments across cities and states. Your package will arrive on time, every time.</p>
+                <button class="learn-more" data-service="Express Delivery">Learn More</button>
+            </div>
+            <div class="service">
+                <h3>Scheduled Delivery</h3>
+                <p>Perfect for businesses or routine deliveries, schedule your shipment according to your needs, ensuring timely and dependable logistics.</p>
+                <button class="learn-more" data-service="Scheduled Delivery">Learn More</button>
+            </div>
+            <div class="service">
+                <h3>Medical STAT Delivery</h3>
+                <p>For critical, time-sensitive medical shipments, our STAT delivery ensures fast and secure transport of vital healthcare items with real-time tracking.</p>
+                <button class="learn-more" data-service="Medical STAT Delivery">Learn More</button>
+            </div>
+            <div class="service">
+                <h3>Dedicated Fleet</h3>
+                <p>Exclusive access to our dedicated fleet means you can enjoy personalized delivery solutions, tailored to meet your unique business or personal needs.</p>
+                <button class="learn-more" data-service="Dedicated Fleet">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for Service Details -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="serviceTitle"></h3>
+            <p id="serviceDescription"></p>
+        </div>
+    </div>
+    
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About e-Express</h2>
+                <p>At e-Express, we revolutionize global logistics with seamless, reliable, and efficient courier solutions. Our mission is to deliver your packages safely, quickly, and affordably, making sure every delivery feels personal. With a decade of industry experience, we’ve built a customer-first approach to logistics that combines technology and human expertise.</p>
+                <p>We offer tailored services, from express shipments to international logistics, with real-time tracking and 24/7 support. Trust e-Express to make your deliveries stress-free and efficient.</p>
+                <button class="about-btn">Learn More</button>
+            </div>
+            <div class="about-image">
+                <img src="1488143f308b55eacbdec9dd22e388de.jpg" alt="e-Express Team">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have any questions or need support? Reach out to us, and our team will be happy to assist you. Your satisfaction is our priority.</p>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Courier Lane, Logistics City, ST 98765</li>
+                    <li><i class="fas fa-phone-alt"></i> +1 234 567 8900</li>
+                    <li><i class="fas fa-envelope"></i> contact@e-express.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About E-Express</h3>
+                <p>We offer top-notch courier and logistics services worldwide. Get your parcels delivered quickly and securely with E-Express. Your trust is our priority.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates and offers from us.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Express. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="express.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0073e6;
+    color: white;
+    position: relative;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 1.8em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffdd00;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons button {
+    background-color: white;
+    color: #0073e6;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+.sign-in a{
+    text-decoration: none;
+    color: #0073e6;
+}
+.sign-in a:hover{
+    color: white;
+}
+
+.auth-buttons .sign-in:hover {
+    background-color: #ffdd00;
+}
+
+.auth-buttons .sign-up {
+    background-color: #ffdd00;
+    color: #0073e6;
+}
+.sign-up a{
+    text-decoration: none;
+    color:#0073e6 ;
+}
+.sign-up a:hover{
+    color: #ffdd00 ;
+}
+.auth-buttons .sign-up:hover {
+    background-color: white;
+    color: #ffdd00;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+}
+
+.dots-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 2px 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Desktop */
+.menu-toggle:hover .dot {
+    background-color: #ffdd00;
+}
+
+.menu-toggle:hover + .navbar ul {
+    display: block;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #0073e6;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+.profile-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+}
+
+.profile-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    background-color: #bdc3c7;
+}
+
+#uploadPic {
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.role {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-info ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btn, .save-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: #219653;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2980b9;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}

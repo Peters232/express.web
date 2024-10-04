@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Express Dashboard</title>
+
+    <link rel="stylesheet" href="dash.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">E-Express</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+        </div>
+
+        <nav class="navbar" id="navbar">
+
+            <ul>
+
+                <li><a href="dash.html">Dashboard</a></li>
+
+                <li><a href="shipment.html">Shipments</a></li>
+
+                <li><a href="tracking.html">Tracking</a></li>
+
+                <li><a href="#">Account</a></li>
+
+                <li><a href="#">Reports</a></li>
+
+                <li><a href="#">Support</a></li>
+
+                <li><a href="#">Sign Out</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="dashboard-overview">
+
+            <div class="overview-item animate-item">
+
+                <h3>Order Summary</h3>
+
+                <p>Processed Orders: <strong>15</strong></p>
+
+                <p>Pending Shipments: <strong>7</strong></p>
+
+                <canvas class="chart" id="orderChart"></canvas>
+
+            </div>
+
+            <div class="overview-item animate-item">
+
+                <h3>Recent Notifications</h3>
+
+                <ul>
+
+                    <li>Shipment #1020 delivered</li>
+
+                    <li>Order #2301 is being processed</li>
+
+                    <li>New message from support</li>
+
+                </ul>
+
+            </div>
+
+            <div class="overview-item animate-item">
+
+                <h3>Account Overview</h3>
+
+                <p>Account Balance: <strong>$620</strong></p>
+
+                <p>Total Invoices: <strong>$300</strong></p>
+
+            </div>
+
+            <div class="overview-item animate-item">
+
+                <h3>Shipment Statistics</h3>
+
+                <p>Total Shipments This Month: <strong>20</strong></p>
+
+                <p>Average Delivery Time: <strong>3 days</strong></p>
+
+            </div>
+
+        </section>
+
+        <section class="quick-links">
+
+            <button class="animated-button" onclick="createShipment()">Create Shipment</button>
+
+            <button class="animated-button" onclick="trackPackage()">Track Package</button>
+
+            <button class="animated-button" onclick="viewReports()">View Reports</button>
+
+            <button class="animated-button" onclick="contactSupport()">Contact Support</button>
+
+        </section>
+
+        <section class="footer-links">
+
+            <h3>Quick Access</h3>
+
+            <ul>
+
+                <li><a href="#">Help Center</a></li>
+
+                <li><a href="#">FAQs</a></li>
+
+                <li><a href="#">Terms of Service</a></li>
+
+                <li><a href="#">Privacy Policy</a></li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2024 E-Express. All rights reserved.</p>
+
+    </footer>
+
+    <script src="dash.js"></script>
+
+</body>
+
+</html>

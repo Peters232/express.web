@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Express Shipment Management</title>
+
+    <link rel="stylesheet" href="shipment.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">E-Express</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+        </div>
+
+        <nav class="navbar" id="navbar">
+
+            <ul>
+
+                <li><a href="dash.html">Dashboard</a></li>
+
+                <li><a href="shipment.html">Shipments</a></li>
+
+                <li><a href="tracking.html">Tracking</a></li>
+
+                <li><a href="#">Account</a></li>
+
+                <li><a href="#">Reports</a></li>
+
+                <li><a href="#">Support</a></li>
+
+                <li><a href="#">Sign Out</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    
+
+    <div class="container">
+
+        <section class="shipment-form" id="create">
+
+            <h2>Create New Shipment</h2>
+
+            <form id="shipmentForm">
+
+                <input type="text" placeholder="Recipient Name" required>
+
+                <input type="text" placeholder="Address" required>
+
+                <input type="date" required>
+
+                <select required>
+
+                    <option value="">Select Status</option>
+
+                    <option value="Pending">Pending</option>
+
+                    <option value="Shipped">Shipped</option>
+
+                    <option value="Delivered">Delivered</option>
+
+                </select>
+
+                <button type="submit">Create Shipment</button>
+
+            </form>
+
+        </section>
+
+        <section class="filters">
+
+            <input type="text" id="searchInput" placeholder="Search shipments...">
+
+            <select id="statusFilter">
+
+                <option value="">All Statuses</option>
+
+                <option value="Pending">Pending</option>
+
+                <option value="Shipped">Shipped</option>
+
+                <option value="Delivered">Delivered</option>
+
+            </select>
+
+        </section>
+
+        <section class="shipment-list" id="shipments">
+
+            <h2>Shipment List</h2>
+
+            <table id="shipmentTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Recipient</th>
+
+                        <th>Address</th>
+
+                        <th>Date</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- Shipments will be added here dynamically -->
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="image-slider" id="slider">
+
+            <h2>Image Slider</h2>
+
+            <div class="slides">
+
+                <img class="slide active" src="image1.jpg" alt="Slide 1">
+
+                <img class="slide" src="image2.jpg" alt="Slide 2">
+
+                <img class="slide" src="image3.jpg" alt="Slide 3">
+
+            </div>
+
+            <div class="navigation">
+
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+
+                <button class="next" onclick="changeSlide(1)">❯</button>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <h2>Contact Us</h2>
+
+            <p>If you have any questions, feel free to <a href="mailto:support@e-express.com">email us</a>.</p>
+
+        </section>
+
+    </div>
+
+    <script src="shipment.js"></script>
+
+</body>
+
+</html>

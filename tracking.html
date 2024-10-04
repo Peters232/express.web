@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Express Shipment Management</title>
+
+    <link rel="stylesheet" href="shipment.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">E-Express</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+            <span class="bar"></span>
+
+        </div>
+
+        <nav class="navbar" id="navbar">
+
+            <ul>
+
+                <li><a href="dash.html">Dashboard</a></li>
+
+                <li><a href="shipment.html">Shipments</a></li>
+
+                <li><a href="tracking.html">Tracking</a></li>
+
+                <li><a href="#">Account</a></li>
+
+                <li><a href="#">Reports</a></li>
+
+                <li><a href="#">Support</a></li>
+
+                <li><a href="#">Sign Out</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Track Package Section -->
+
+    <section class="track-package">
+
+        <div class="image-container">
+
+            <img src="a2b7a353a4f5e24102d60e6d41a995cb.jpg" alt="Track Package">
+
+        </div>
+
+        <div class="track-form">
+
+            <h1>Track Your Package</h1>
+
+            <p>Enter your tracking number to get real-time updates on your package.</p>
+
+            <input type="text" id="trackingNumber" placeholder="Enter tracking number">
+
+            <button onclick="trackPackage()">Track Now</button>
+
+        </div>
+
+    </section>
+
+    <!-- Tracking History Section -->
+
+    <section class="tracking-history">
+
+        <div class="image-container">
+
+            <img src="1488143f308b55eacbdec9dd22e388de.jpg" alt="Tracking History">
+
+        </div>
+
+        <div class="history-table">
+
+            <h2>Tracking History</h2>
+
+            <table id="historyTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date</th>
+
+                        <th>Location</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- Tracking info goes here -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- Map View Section -->
+
+    <section class="map-view">
+
+        <div class="image-container">
+
+            <img src="a2b7a353a4f5e24102d60e6d41a995cb.jpg" alt="Map View">
+
+        </div>
+
+        <div class="map-container">
+
+            <h2>Live Map View</h2>
+
+            <div id="map"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Share Tracking Link Section -->
+
+    <section class="share-tracking">
+
+        <div class="image-container">
+
+            <img src="1488143f308b55eacbdec9dd22e388de.jpg" alt="Share Tracking">
+
+        </div>
+
+        <div class="share-content">
+
+            <h2>Share Your Tracking Link</h2>
+
+            <input type="text" id="trackingLink" readonly>
+
+            <button onclick="shareLink()">Copy Link</button>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>&copy; 2024 E-Express. All rights reserved.</p>
+
+    </footer>
+
+    <script src="tracking.js"></script>
+
+</body>
+
+</html>
